@@ -1,8 +1,8 @@
 Python-Activity-Based-Learning
-Name-Pandalaneni Ganesh Kumar
-Roll number-26000971
-Branch-CSM
-Section-2
+Name-Pandalaneni Ganesh Kumar |
+Roll number-26000971| 
+Branch-CSM |
+Section-2 |
 Title:
 Titles for Case Studies (11–20)
 11. Examination Result and Grace-Mark Validation
