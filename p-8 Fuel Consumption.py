@@ -1,5 +1,3 @@
-# Student Performance Trend Analysis
-
 subjects = ["English", "Mathematics", "Physics", "Chemistry", "Programming"]
 
 num_exams = int(input("Enter the number of examinations: "))
