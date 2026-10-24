@@ -1,5 +1,3 @@
-# Examination Result and Grace-Mark Validation
-
 subjects = ["English", "Mathematics", "Physics",
             "Chemistry", "Programming"]
 
@@ -12,7 +10,6 @@ original_marks = []
 print("EXAMINATION RESULT SYSTEM")
 print("-" * 35)
 
-# Input and validate marks
 for subject in subjects:
     marks = int(input("Enter marks in " + subject + ": "))
 
@@ -22,10 +19,9 @@ for subject in subjects:
 
     original_marks.append(marks)
 
-# Copy original marks
 final_marks = original_marks.copy()
 
-# Find failed subjects
+
 failed_subjects = []
 
 for i in range(len(final_marks)):
@@ -34,7 +30,7 @@ for i in range(len(final_marks)):
 
 grace_used = 0
 
-# Apply grace-mark policy
+
 if len(failed_subjects) == 1:
     index = failed_subjects[0]
     required_grace = PASS_MARKS - final_marks[index]
@@ -43,7 +39,7 @@ if len(failed_subjects) == 1:
         final_marks[index] += required_grace
         grace_used = required_grace
 
-# Calculate total and check subject-wise passing
+
 total = 0
 all_passed = True
 
@@ -63,11 +59,11 @@ for i in range(len(subjects)):
     if final_marks[i] < PASS_MARKS:
         all_passed = False
 
-# Calculate percentage
+
 maximum_total = len(subjects) * MAX_MARKS
 percentage = (total / maximum_total) * 100
 
-# Determine classification
+
 if not all_passed:
     classification = "FAIL"
 elif percentage >= 75:
@@ -79,7 +75,7 @@ elif percentage >= 50:
 else:
     classification = "PASS CLASS"
 
-# Display final result
+
 print("-" * 50)
 print("Total Marks:", total, "/", maximum_total)
 print("Percentage:", round(percentage, 2), "%")
