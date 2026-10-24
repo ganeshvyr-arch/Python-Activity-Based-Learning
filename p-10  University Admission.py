@@ -1,4 +1,4 @@
-# University Admission Decision Engine
+
 
 subjects = [
     "English",
@@ -44,7 +44,7 @@ else:
 
         mathematics_marks = marks[1]
 
-        # Check eligibility
+
         subject_eligible = True
 
         for score in marks:
@@ -80,10 +80,7 @@ else:
         if applicant[6] == "Eligible":
             eligible_applicants.append(applicant)
 
-    # Sort by:
-    # 1. Higher aggregate percentage
-    # 2. Higher Mathematics marks
-    # 3. Lower applicant ID
+
     eligible_applicants.sort(
         key=lambda applicant: (
             -applicant[4],
