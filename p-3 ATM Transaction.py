@@ -1,6 +1,3 @@
-#python
-# ATM Transaction Sequence Simulation
-
 balance = 5000
 withdrawal_limit = 2000
 
