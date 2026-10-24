@@ -1,5 +1,3 @@
-# Multi-Product Shopping Budget Constraint
-
 products = ["Rice", "Sugar", "Oil", "Biscuits", "Milk"]
 prices = [60, 45, 150, 30, 50]
 
@@ -27,7 +25,6 @@ for i in range(len(products)):
     quantities.append(quantity)
     total_cost += prices[i] * quantity
 
-# Apply discount
 if total_cost >= 2000:
     discount_rate = 10
 elif total_cost >= 1000:
