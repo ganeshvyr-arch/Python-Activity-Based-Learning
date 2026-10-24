@@ -1,10 +1,10 @@
-# Attendance Recovery Computation
+
 
 total_classes = int(input("Enter total classes conducted: "))
 attended_classes = int(input("Enter classes attended: "))
 required_percentage = float(input("Enter required attendance percentage: "))
 
-# Validate input
+
 if total_classes < 0 or attended_classes < 0:
     print("Invalid input! Class counts cannot be negative.")
 
@@ -15,7 +15,6 @@ elif required_percentage < 0 or required_percentage > 100:
     print("Invalid attendance percentage!")
 
 else:
-    # Calculate current attendance percentage
     if total_classes == 0:
         current_percentage = 0
     else:
@@ -32,7 +31,6 @@ else:
         print("Additional consecutive classes required: 0")
 
     else:
-        # Calculate minimum consecutive classes to attend
         future_classes = 0
 
         while True:
@@ -49,7 +47,7 @@ else:
         print("Status: Not currently eligible")
         print("Minimum consecutive classes to attend:", future_classes)
 
-        # Show future attendance scenarios
+    
         print("\n--- Future Attendance Scenarios ---")
 
         for extra_classes in [5, 10, 15, 20]:
