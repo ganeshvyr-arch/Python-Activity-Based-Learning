@@ -19,7 +19,6 @@ for i in range(len(products)):
 
     if quantity < 0:
         print("Invalid quantity!")
-        raise SystemExit
 
     quantities.append(quantity)
     total_cost += prices[i] * quantity
