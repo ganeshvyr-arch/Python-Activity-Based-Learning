@@ -8,7 +8,6 @@ budget = float(input("Enter your shopping budget (Rs.): "))
 
 if budget <= 0:
     print("Invalid budget!")
-    raise SystemExit
 
 print("\n===== SHOPPING BASKET =====")
 
