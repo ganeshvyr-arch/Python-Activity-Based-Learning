@@ -73,7 +73,6 @@ else:
 
         applicants.append(applicant)
 
-    # Select eligible applicants
     eligible_applicants = []
 
     for applicant in applicants:
