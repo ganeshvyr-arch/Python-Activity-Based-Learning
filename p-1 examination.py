@@ -15,7 +15,6 @@ for subject in subjects:
 
     if marks < 0 or marks > MAX_MARKS:
         print("Invalid marks! Marks must be between 0 and 100.")
-        raise SystemExit
 
     original_marks.append(marks)
 
