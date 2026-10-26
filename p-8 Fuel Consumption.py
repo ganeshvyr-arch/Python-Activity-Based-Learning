@@ -17,7 +17,6 @@ else:
 
             if score < 0 or score > 100:
                 print("Invalid marks! Marks must be between 0 and 100.")
-                raise SystemExit
 
             exam_marks.append(score)
 
